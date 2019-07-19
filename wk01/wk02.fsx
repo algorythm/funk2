@@ -3,9 +3,9 @@ let f = function
     | x when x % 5 = 0 -> false
     | x when x % 2 = 0 || x % 3 = 0 -> true
     | _ -> false
-let test1 = f(30) = false
-let test2 = f(4) = true
-let test3 = f(12) = true
+let test1 = not (f(30))
+let test2 = f(4)
+let test3 = f(12)
 
 // side 39, ex 2.2
 let rec pow = function
